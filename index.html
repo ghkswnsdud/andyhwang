@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andy Hwang / Designer / Korea</title>
+<style>
+/* 한글만 Pretendard Medium, 나머지(영문)는 Helvetica Bold */
+@font-face {
+  font-family: "KR";
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/woff2/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 100 900;
+  unicode-range: U+1100-11FF, U+3130-318F, U+AC00-D7AF;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: #fff; color: #000; overflow-x: hidden; }
+body {
+  font-family: "KR", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+}
+a { color: inherit; }
+ul { list-style: none; }
+
+.name {
+  position: fixed; top: 16px; right: 34px; z-index: 3;
+  font-size: 40px; letter-spacing: -0.02em; text-decoration: none;
+}
+.index { position: fixed; inset: 0; z-index: 2; pointer-events: none; }
+.index a { pointer-events: auto; }
+.col { position: absolute; top: 24px; }
+.col1 { left: 23px; }
+.col2 { left: 219px; top: 27px; }
+.cats { margin-bottom: 47px; }
+.col ul + ul { margin-top: 13px; }
+.menu { position: absolute; left: 23px; bottom: 80px; font-size: 13px; line-height: 1.2; }
+.foot { position: absolute; left: 25px; right: 30px; bottom: 9px; display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #777; font-weight: 400; }
+.foot span { display: flex; align-items: center; gap: 9px; }
+
+.images { margin-left: 50.25%; width: 700px; padding: 96px 0 20px; position: relative; z-index: 1; }
+.images img { width: 100%; display: block; margin-bottom: 20px; }
+
+@media (max-width: 760px) {
+  .index, .col, .menu, .foot { position: static; }
+  .index { padding: 80px 16px 0; }
+  .col { margin-bottom: 24px; }
+  .menu { margin: 24px 0; }
+  .name { position: absolute; left: 16px; right: auto; font-size: 32px; }
+  .images { margin: 0; width: auto; padding: 16px; }
+}
+</style>
+</head>
+<body>
+<a class="name" href="index.html">ANDY HWANG</a>
+
+<nav class="index">
+  <div class="col col1">
+    <ul class="cats">
+      <li>(A) ARTWORK</li>
+      <li>(F) FURNITURE</li>
+    </ul>
+    <ul>
+      <li><a href="module-cubes-16.html">(A) Module Cubes #16 / 2026</a></li>
+      <!-- (A) 새 항목은 여기에 추가: <li><a href="페이지.html">(A) 제목 / 연도</a></li> -->
+    </ul>
+  </div>
+
+  <div class="col col2">
+    <ul class="cats">
+      <li>(SE) SOLO EXHIBITION</li>
+      <li>(GE) GROUP EXHIBITION</li>
+      <li>(C) COMMERCIAL</li>
+    </ul>
+    <ul>
+      <!-- (SE) 새 항목은 여기에 추가: <li><a href="페이지.html">(SE) 제목 / 연도</a></li> -->
+    </ul>
+    <ul>
+      <!-- (GE) 새 항목은 여기에 추가: <li><a href="페이지.html">(GE) 제목 / 연도</a></li> -->
+    </ul>
+    <ul>
+      <!-- (C) 새 항목은 여기에 추가: <li><a href="페이지.html">(C) 제목 / 연도</a></li> -->
+    </ul>
+  </div>
+
+  <ul class="menu">
+    <li><a href="#">CV</a></li>
+    <li><a href="#">CONTACT</a></li>
+    <li><a href="#">PRESS</a></li>
+    <li><a href="#">TEXT</a></li>
+  </ul>
+
+  <div class="foot">
+    <span>
+      <a href="https://www.instagram.com/andyhwg/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:9px;text-decoration:none"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Seoul, Korea</a>
+    </span>
+    <span>Copyright © 2026 Andy Hwang. All rights reserved.</span>
+  </div>
+</nav>
+
+<!-- 메인 이미지: 최신 작품을 맨 위에 추가 (이전 작품은 아래로 밀림)
+     형식: <a href="페이지.html"><img src="images/파일.jpg" alt="작품명"></a> -->
+<main class="images">
+  <a href="module-cubes-16.html"><img src="images/module-cubes-16.jpg" alt="Module Cubes #16"></a>
+</main>
+</body>
+</html>
